@@ -12,7 +12,7 @@ export class StorageService{
 
   async init(){
 
-    const saved = localStorage.getItem('app-storage')
+    const saved = localStorage.getItem('app-storage-osakidetza')
 
     if(saved){
       this.store = JSON.parse(saved)
@@ -35,7 +35,7 @@ export class StorageService{
 
   save(){
     localStorage.setItem(
-      'app-storage',
+      'app-storage-osakidetza',
       JSON.stringify(this.store)
     )
   }
