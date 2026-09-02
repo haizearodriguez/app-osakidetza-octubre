@@ -309,7 +309,7 @@
   },
   {
     "id": 29,
-    "question": "Dirección estratégica. En el modelo de Abell para definir el entorno competitivo, una industria se caracteriza por: Señale la respuesta correcta.",
+    "question": "Revisar: Dirección estratégica. En el modelo de Abell para definir el entorno competitivo, una industria se caracteriza por: Señale la respuesta correcta.",
     "answers": {
       "A": "Cubrir una función y un grupo de clientes específico que buscan satisfacer unas necesidades económicas.",
       "B": "Usar una tecnología determinada para atender todas las funciones y grupos.",
@@ -793,7 +793,7 @@
   },
   {
     "id": 73,
-    "question": "Competencias de Liderazgo. La “zona ciega” en la Ventana de Johari se refiere a… (Señale la respuesta correcta).",
+    "question": "Revisar:Competencias de Liderazgo. La “zona ciega” en la Ventana de Johari se refiere a… (Señale la respuesta correcta).",
     "answers": {
       "A": "La información sobre mí que los demás conocen, pero yo no.",
       "B": "La información sobre mí que no es conocida ni por mí ni por los demás.",
@@ -2498,7 +2498,7 @@
   },
   {
     "id": 228,
-    "question": "Prevención de riesgos laborales. La estructura general de ISO 45001:2018 sigue el ciclo PDCA/PHVA (Plan-Do-Check-Act / Planificar-Hacer-Verificar-Actuar). ¿Qué bloques corresponden a dicha estructura? Señale la respuesta correcta.",
+    "question": "Revisar:Prevención de riesgos laborales. La estructura general de ISO 45001:2018 sigue el ciclo PDCA/PHVA (Plan-Do-Check-Act / Planificar-Hacer-Verificar-Actuar). ¿Qué bloques corresponden a dicha estructura? Señale la respuesta correcta.",
     "answers": {
       "A": "Diagnóstico; Implementación; Verificación; Mejora.",
       "B": "Planificación; Implementación y operación; Evaluación del desempeño; Mejora.",
@@ -2663,14 +2663,14 @@
   },
   {
     "id": 243,
-    "question": "Sistema de gestión de formación en Osakidetza. Los programas formativos en el itinerario podrán tener tres estadios diferenciados atendiendo a su estado de realización. ¿cuál de los siguientes estadios NO está contemplado en el modelo de gestión de formación basado en itinerarios formativos de Osakidetza?",
+    "question": "Revisar: Sistema de gestión de formación en Osakidetza. Los programas formativos en el itinerario podrán tener tres estadios diferenciados atendiendo a su estado de realización. ¿cuál de los siguientes estadios NO está contemplado en el modelo de gestión de formación basado en itinerarios formativos de Osakidetza?",
     "answers": {
       "A": "Pendiente de realizar.",
       "B": "A actualizar.",
       "C": "Realizado.",
       "D": "A completar."
     },
-    "correct": "B"
+    "correct": "D"
   },
   {
     "id": 244,
@@ -2868,7 +2868,7 @@
       "C": "Evaluación 180º",
       "D": "Evaluación tradicional."
     },
-    "correct": "A"
+    "correct": "C"
   },
   {
     "id": 262,
@@ -3099,7 +3099,7 @@
       "C": "Curiosidad.",
       "D": "Alegría."
     },
-    "correct": "A"
+    "correct": "C"
   },
   {
     "id": 283,
@@ -3165,7 +3165,7 @@
       "C": "Sorpresa.",
       "D": "Culpa."
     },
-    "correct": "C"
+    "correct": "D"
   },
   {
     "id": 289,
@@ -3187,7 +3187,7 @@
       "C": "Rabia, tristeza, culpa, asco, miedo, sorpresa, seguridad, envidia, alegría y curiosidad.",
       "D": "Rabia, tristeza, culpa, asco, miedo, sorpresa, seguridad, admiración, alegría y curiosidad."
     },
-    "correct": "C"
+    "correct": "D"
   },
   {
     "id": 291,
@@ -3246,14 +3246,14 @@
   },
   {
     "id": 296,
-    "question": "La gestión de las emociones en el entorno laboral. Aguado Romo afirma que una emoción clave para la toma de decisiones inteligentes, que permite evaluar sin contaminar el clima emocional, es: (Señale la respuesta correcta)",
+    "question": "Revisar:La gestión de las emociones en el entorno laboral. Aguado Romo afirma que una emoción clave para la toma de decisiones inteligentes, que permite evaluar sin contaminar el clima emocional, es: (Señale la respuesta correcta)",
     "answers": {
       "A": "Rabia.",
       "B": "Curiosidad.",
       "C": "Sorpresa.",
       "D": "Seguridad."
     },
-    "correct": "B"
+    "correct": "D"
   },
   {
     "id": 297,
@@ -3506,7 +3506,7 @@
       "C": "Investigador de recursos.",
       "D": "Finalizador."
     },
-    "correct": "A"
+    "correct": "C"
   },
   {
     "id": 320,
@@ -3550,7 +3550,7 @@
       "C": "Impulsor.",
       "D": "Finalizador."
     },
-    "correct": "C"
+    "correct": "D"
   },
   {
     "id": 324,
@@ -3572,7 +3572,7 @@
       "C": "Los Roles de Equipo varían con la cultura.",
       "D": "La estructura de autoridad a veces impide que los Roles de Equipo afloren."
     },
-    "correct": "B"
+    "correct": "C"
   },
   {
     "id": 326,
@@ -3781,7 +3781,7 @@
       "C": "Que el facilitador tendrá que hacer grandes esfuerzos para promover la participación de las personas asistentes.",
       "D": "Que la participación puede llegar a ser un caos asambleario por el acumulo de energía y emociones que pueden surgir."
     },
-    "correct": "C"
+    "correct": "D"
   },
   {
     "id": 345,
@@ -3814,7 +3814,7 @@
       "C": "Preparativos.",
       "D": "Cierre."
     },
-    "correct": "D"
+    "correct": "A"
   },
   {
     "id": 348,
@@ -3990,7 +3990,7 @@
       "C": "Al Consejo de Administración del Ente Público Osakidetza-Servicio Vasco de Salud.",
       "D": "A los Directores Gerentes de cada organización de servicios sanitarios."
     },
-    "correct": "A"
+    "correct": "C"
   },
   {
     "id": 364,
@@ -4056,7 +4056,7 @@
       "C": "Un máximo de seis cargos directivos.",
       "D": "Un número indeterminado de cargos directivos fijado libremente por cada organización."
     },
-    "correct": "A"
+    "correct": "B"
   },
   {
     "id": 370,
@@ -4071,7 +4071,7 @@
   },
   {
     "id": 371,
-    "question": "Un paciente presenta una reclamación de responsabilidad patrimonial por el funcionamiento de un servicio sanitario dependiente del Ente Público Osakidetza- Servicio Vasco de Salud. El procedimiento se tramita y finaliza mediante resolución administrativa expresa que pone fin al mismo. En relación con este supuesto, señale la afirmación correcta:",
+    "question": "Revisar: Un paciente presenta una reclamación de responsabilidad patrimonial por el funcionamiento de un servicio sanitario dependiente del Ente Público Osakidetza- Servicio Vasco de Salud. El procedimiento se tramita y finaliza mediante resolución administrativa expresa que pone fin al mismo. En relación con este supuesto, señale la afirmación correcta:",
     "answers": {
       "A": "La resolución corresponde al Director General del Ente Público por razones de eficacia administrativa.",
       "B": "La resolución corresponde al Director-Gerente de la organización de servicios sanitarios en la que se produjo el daño.",
@@ -5226,7 +5226,7 @@
   },
   {
     "id": 476,
-    "question": "En la Organización Sanitaria OSI-X, en algunos casos, los criterios de fijación de objetivos no tienen una lógica adecuada ni se ve claramente que sean impulsores de la mejora. Teniendo en cuenta la información referente a OBJETIVOS de los gráficos anteriores ¿cómo valorarías los OBJETIVOS según la tabla de valoración del Modelo de Gestión Avanzada 2023? Señale la respuesta correcta.",
+    "question": "Revisar: En la Organización Sanitaria OSI-X, en algunos casos, los criterios de fijación de objetivos no tienen una lógica adecuada ni se ve claramente que sean impulsores de la mejora. Teniendo en cuenta la información referente a OBJETIVOS de los gráficos anteriores ¿cómo valorarías los OBJETIVOS según la tabla de valoración del Modelo de Gestión Avanzada 2023? Señale la respuesta correcta.",
     "answers": {
       "A": "Avanzado.",
       "B": "Desarrollado.",
