@@ -2861,14 +2861,14 @@
   },
   {
     "id": 261,
-    "question": "Evaluación del desempeño. Una evaluación de competencias en la que una persona es evaluada por su jefe/a, sus pares y –eventualmente- los clientes, se denomina: (Señale la respuesta correcta)",
+    "question": "Revisar: Evaluación del desempeño. Una evaluación de competencias en la que una persona es evaluada por su jefe/a, sus pares y –eventualmente- los clientes, se denomina: (Señale la respuesta correcta)",
     "answers": {
       "A": "Evaluación 360º",
       "B": "Evaluación 90º",
       "C": "Evaluación 180º",
       "D": "Evaluación tradicional."
     },
-    "correct": "C"
+    "correct": "A"
   },
   {
     "id": 262,
