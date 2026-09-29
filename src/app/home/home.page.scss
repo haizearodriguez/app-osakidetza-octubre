@@ -79,3 +79,68 @@
     opacity: 0.7;
   }
 }
+
+
+// ─── Bloques de 50 ───────────────────────────────────────────────────────────
+.blocks {
+  width: 100%;
+  max-width: 320px;
+  margin-top: 20px;
+  padding: 12px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(36, 61, 29, 0.08);
+}
+
+.blocks-title {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #2d4f24;
+  margin-bottom: 6px;
+}
+
+.blocks-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.blocks-type {
+  flex: 0 0 74px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #1e3318;
+  padding-top: 8px;
+}
+
+.blocks-chips { display: flex; flex-wrap: wrap; }
+
+ion-chip {
+  margin: 2px 4px 2px 0;
+  --background: #eef7e4;
+  --color: #243d1d;
+  font-size: 12px;
+  cursor: pointer;
+
+  &.all { --background: #243d1d; --color: white; }
+}
+
+.blocks-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 10px;
+
+  a { color: #c0392b; font-size: 13px; text-decoration: underline; cursor: pointer; }
+
+  ion-button {
+    --background: #243d1d;
+    --color: white;
+    height: 40px;
+    font-size: 14px;
+  }
+}

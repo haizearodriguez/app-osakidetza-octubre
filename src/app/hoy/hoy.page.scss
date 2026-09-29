@@ -314,3 +314,54 @@ ion-button {
     letter-spacing: 0.06em;
     color: #243d1d;
 }
+
+// ─── Selector por bloques ─────────────────────────────────────────────────────
+.blocks { padding: 0 16px 8px; }
+
+.blocks-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.blocks-type {
+  flex: 0 0 74px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #1e3318;
+}
+
+.blocks-chips { display: flex; flex-wrap: wrap; }
+
+ion-chip {
+  margin: 2px 4px 2px 0;
+  --background: #eef7e4;
+  --color: #243d1d;
+  border: 1px solid transparent;
+  font-size: 12px;
+  cursor: pointer;
+
+  &.some { border-color: #243d1d; }
+  &.all { --background: #243d1d; --color: white; }
+  &.empty { opacity: 0.35; pointer-events: none; }
+}
+
+// ─── Listas desplegables ──────────────────────────────────────────────────────
+.lista-desplegable {
+  margin: 0 16px 8px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(36, 61, 29, 0.08);
+
+  ion-accordion { --background: white; }
+
+  ion-item[slot="header"] {
+    --background: white;
+    font-size: 13px;
+    font-weight: 600;
+    color: #243d1d;
+  }
+
+  ion-list { margin: 0; }
+}

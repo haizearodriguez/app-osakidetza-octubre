@@ -84,6 +84,7 @@ ion-content {
   line-height: 1.6;
   color: #1e3318;
   font-weight: 400;
+  white-space: pre-line; // respeta los \n del JSON
 }
 
 // ─── Opciones ────────────────────────────────────────────────────────────────
@@ -220,4 +221,13 @@ ion-content {
   font-size: 14px;
   font-weight: 500;
   height: auto;
+}
+
+
+.q-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 12px auto 0;
+  border-radius: 8px;
 }

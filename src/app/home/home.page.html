@@ -42,5 +42,28 @@
 
     </div>
 
+    <!-- Elegir por bloques de 50 -->
+    <div class="blocks">
+      <div class="blocks-title">Elegir por bloques de {{ blockSize }}</div>
+
+      <div class="blocks-row" *ngFor="let g of blockGroups">
+        <span class="blocks-type">{{ g.type }}</span>
+        <div class="blocks-chips">
+          <ion-chip *ngFor="let b of g.blocks"
+            [class.all]="b.selected"
+            (click)="b.selected = !b.selected">
+            {{ b.start }}–{{ b.end }}
+          </ion-chip>
+        </div>
+      </div>
+
+      <div class="blocks-actions">
+        <a *ngIf="selectedCount > 0" (click)="clearBlocks()">Limpiar</a>
+        <ion-button shape="round" [disabled]="selectedCount === 0" (click)="startBlocks()">
+          Empezar ({{ selectedCount }})
+        </ion-button>
+      </div>
+    </div>
+
   </div>
 </ion-content>

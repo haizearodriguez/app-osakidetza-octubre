@@ -16,6 +16,9 @@
     <!-- Tarjeta de pregunta -->
     <div class="question-card">
       <div class="q-text">{{ question?.question }}</div>
+      @if (question?.image) {
+        <img class="q-image" [src]="question.image" alt="Imagen de la pregunta">
+      }
     </div>
 
     <!-- Opciones -->

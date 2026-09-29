@@ -7,7 +7,8 @@ import {
   IonContent, IonHeader, IonTitle, IonToolbar,
   IonBadge, IonList, IonListHeader, IonItem, IonLabel,
   IonCard, IonCardContent, IonGrid, IonRow, IonCol,
-  IonNote, IonButton, IonIcon, IonCheckbox, IonCardHeader, IonCardTitle } from '@ionic/angular/standalone';
+  IonNote, IonButton, IonIcon, IonCheckbox, IonCardHeader, IonCardTitle, IonChip,
+  IonAccordion, IonAccordionGroup, IonSegment, IonSegmentButton } from '@ionic/angular/standalone';
 import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
 import { arrowBack, arrowForward} from 'ionicons/icons';
@@ -19,7 +20,7 @@ import { addIcons } from 'ionicons';
   templateUrl: './hoy.page.html',
   styleUrls: ['./hoy.page.scss'],
   standalone: true,
-  imports: [IonCardTitle, IonCardHeader, 
+  imports: [IonSegmentButton, IonSegment, IonChip, IonAccordion, IonAccordionGroup, IonCardTitle, IonCardHeader, 
     IonIcon, IonButton, IonContent, IonHeader, IonTitle, IonToolbar,
     IonBadge, IonList, IonItem, IonLabel, IonCheckbox,
     CommonModule, FormsModule, DatePipe,
@@ -50,6 +51,9 @@ export class HoyPage implements OnInit {
                     'Agosto','Septiembre','Octubre','Noviembre','Diciembre']
 
   pendientesDia: any[] = [];
+
+  readonly blockSize = 50
+  blockGroups: { type: string, blocks: { start: number, end: number }[] }[] = []
 
   constructor(
     private statsService: StatsService,
@@ -170,6 +174,47 @@ export class HoyPage implements OnInit {
         question: q.question,
         selectedPending: false
       }));
+
+    this.seleccionarTodasPendientes = false
+    this.buildBlocks(allQuestions)
+  }
+
+  private buildBlocks(allQuestions: any[]) {
+    const maxByType = new Map<string, number>()
+    allQuestions.forEach((q: any) => {
+      maxByType.set(q.type, Math.max(maxByType.get(q.type) || 0, q.id))
+    })
+    this.blockGroups = [...maxByType.entries()].map(([type, max]) => ({
+      type,
+      blocks: Array.from({ length: Math.ceil(max / this.blockSize) }, (_, i) => ({
+        start: i * this.blockSize + 1,
+        end: Math.min((i + 1) * this.blockSize, max)
+      }))
+    }))
+  }
+
+  private pendientesEnBloque(type: string, start: number, end: number) {
+    return this.pendientesDia.filter(
+      p => p.categoria === type && p.id >= start && p.id <= end
+    )
+  }
+
+  /** 'all' | 'some' | 'none' | 'empty' (sin pendientes en el bloque) */
+  blockState(type: string, start: number, end: number) {
+    const items = this.pendientesEnBloque(type, start, end)
+    if (items.length === 0) return 'empty'
+    const n = items.filter(p => p.selectedPending).length
+    if (n === 0) return 'none'
+    return n === items.length ? 'all' : 'some'
+  }
+
+  toggleBlock(type: string, start: number, end: number) {
+    const state = this.blockState(type, start, end)
+    if (state === 'empty') return
+    this.pendientesEnBloque(type, start, end)
+      .forEach(p => p.selectedPending = state !== 'all')
+    this.seleccionarTodasPendientes =
+      this.pendientesDia.length > 0 && this.pendientesDia.every(p => p.selectedPending)
   }
 
   get fallosSeleccionados(): number {

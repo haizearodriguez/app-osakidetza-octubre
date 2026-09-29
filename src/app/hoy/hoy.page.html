@@ -93,6 +93,12 @@
           </ion-label>
         </ion-item>
 
+        <ion-accordion-group class="lista-desplegable" *ngIf="fallosDia.length > 0">
+          <ion-accordion value="falladas">
+            <ion-item slot="header" lines="none">
+              <ion-label>Ver preguntas ({{ fallosDia.length }})</ion-label>
+            </ion-item>
+            <div slot="content">
         <ion-list [inset]="true" *ngIf="fallosDia.length > 0">
 
           <ion-item *ngFor="let f of fallosDia">
@@ -134,6 +140,9 @@
           </ion-item>
 
         </ion-list>
+            </div>
+          </ion-accordion>
+        </ion-accordion-group>
 
       </ion-col>
 
@@ -152,9 +161,33 @@
         </ion-label>
       </ion-item>
 
+      <!-- Selección rápida por bloques de 50 -->
+      <div class="blocks">
+        <div class="blocks-row" *ngFor="let g of blockGroups">
+          <span class="blocks-type">{{ g.type }}</span>
+          <div class="blocks-chips">
+            <ion-chip *ngFor="let b of g.blocks"
+              [class.all]="blockState(g.type, b.start, b.end) === 'all'"
+              [class.some]="blockState(g.type, b.start, b.end) === 'some'"
+              [class.empty]="blockState(g.type, b.start, b.end) === 'empty'"
+              (click)="toggleBlock(g.type, b.start, b.end)">
+              {{ b.start }}–{{ b.end }}
+            </ion-chip>
+          </div>
+        </div>
+      </div>
+
+      <ion-accordion-group class="lista-desplegable" *ngIf="pendientesDia.length > 0">
+        <ion-accordion value="pendientes">
+          <ion-item slot="header" lines="none">
+            <ion-label>Ver preguntas ({{ pendientesDia.length }})</ion-label>
+          </ion-item>
+          <div slot="content">
       <ion-list [inset]="true" *ngIf="pendientesDia.length > 0">
 
         <ion-item *ngFor="let p of pendientesDia">
+
+          <ion-checkbox slot="start" [(ngModel)]="p.selectedPending"></ion-checkbox>
 
           <ion-label>
 
@@ -180,6 +213,9 @@
         </ion-item>
 
       </ion-list>
+          </div>
+        </ion-accordion>
+      </ion-accordion-group>
 
       <ion-list [inset]="true" *ngIf="pendientesDia.length === 0">
 
